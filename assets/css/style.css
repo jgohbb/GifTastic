@@ -1,11 +1,38 @@
+body {
+    background-color: palegoldenrod;
+}
+
 input {
-    margin: 5px 0 5px 0;
+    margin: 10px 0 5px 0;
+    padding: 0 0 0 10px;
 }
 
 #add-pokemon {
-    background-color: aqua;
+    background-color: gold;
+    color: midnightblue;
     padding:2px 20px 2px 20px;
     border-radius: 8px;
     box-shadow: 1px 1px 2px black;
     font-weight: bold;
+}
+input[type="text"] {
+    padding: 5px 0 5px 0;
+    box-shadow: 0 0 10px 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#buttons-view {
+    background-image: url(../images/pokemon.jpg);
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-size:cover;
+}
+
+button {
+    font-weight: bold;
+    margin: 10px;
+    text-transform: capitalize;
+
 }

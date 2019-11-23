@@ -39,11 +39,10 @@ $(document).ready(function() {
             
                 var ratingP = $("<p>");
                 var ratingInfo = $("<p>").text("Rating: " + rating);
+                ratingP.attr("font-weight","bold");
             
                 $("#image-box").prepend(ratingInfo);  
                 $("#image-box").prepend(pokemonImage);
-           
-
             }
         });
     }
