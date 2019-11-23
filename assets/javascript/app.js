@@ -20,7 +20,6 @@ $(document).ready(function() {
         var selectPokemon= $(this).attr("data-name");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         selectPokemon + "&api_key=EGEKyyvU9sBFaCFAdcVl69RzrlWGiUPI&limit=10";
-        var imageDiv = $("<div class='item'>");
         console.log(queryURL);
 
         $.ajax({
@@ -41,10 +40,10 @@ $(document).ready(function() {
                 var ratingP = $("<p>");
                 var ratingInfo = $("<p>").text("Rating: " + rating);
             
+                $("#image-box").prepend(ratingInfo);  
+                $("#image-box").prepend(pokemonImage);
+           
 
-                imageDiv.prepend(pokemonImage);
-                imageDiv.prepend(ratingInfo);             
-                $("#image-box").prepend(imageDiv);
             }
         });
     }
@@ -56,12 +55,14 @@ $(document).ready(function() {
         var addedPokemon = $("#pokemon-input").val().trim();  
 
         pokemon.push(addedPokemon);
-        $("#pokemon-input").val('');
+        // $("#top-buttons").val('');
 
         generateButtons();
 
     });
     
+    generateButtons();
+
     $(document).on("click", "img", function() {
         var src = $(this).attr("src");
       if($(this).hasClass('playing')){
