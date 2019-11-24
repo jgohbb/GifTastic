@@ -1,5 +1,7 @@
 body {
-    background-color: palegoldenrod;
+    background-image: url(../images/pokemon1.jpg);
+
+    /* background-color: palegoldenrod; */
 }
 
 input {
@@ -48,4 +50,3 @@ p {
     font-weight: bold;
     text-transform: capitalize;
 }
-
