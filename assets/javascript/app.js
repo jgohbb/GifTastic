@@ -53,7 +53,7 @@ $(document).ready(function() {
         var addedPokemon = $("#pokemon-input").val().trim();  
 
         pokemon.push(addedPokemon);
-        // $("#top-buttons").val('');
+        $("#pokemon-input").val('');
 
         generateButtons();
 
