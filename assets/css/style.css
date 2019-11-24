@@ -1,7 +1,5 @@
 body {
     background-image: url(../images/pokemon1.jpg);
-
-    /* background-color: palegoldenrod; */
 }
 
 input {
@@ -26,6 +24,7 @@ input[type="text"] {
 
 #buttons-view {
     background-image: url(../images/pokemon.jpg);
+    opacity: 0.8;
     margin: 10px 0 10px 0;
     font-weight: bold;
     text-transform: capitalize;
