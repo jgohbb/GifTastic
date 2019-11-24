@@ -31,9 +31,12 @@ input[type="text"] {
 }
 
 button {
+    color: midnightblue ;
+    text-shadow: 2px 2px yellow;
     font-weight: bold;
     margin: 10px;
     text-transform: capitalize;
+    box-shadow: 2px 2px 2px black;
 }
 
 #pokemon-form {
