@@ -36,3 +36,9 @@ button {
     text-transform: capitalize;
 
 }
+
+p {
+    color: crimson;
+    font-weight: bold;
+    text-transform: capitalize;
+}

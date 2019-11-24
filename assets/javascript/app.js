@@ -38,8 +38,7 @@ $(document).ready(function() {
                 pokemonImage.attr("alt", title);
             
                 var ratingP = $("<p>");
-                var ratingInfo = $("<p>").text("Rating: " + rating);
-                ratingP.attr("font-weight","bold");
+                var ratingInfo = $("<p>").text("Rating:  " + rating);
             
                 $("#image-box").prepend(ratingInfo);  
                 $("#image-box").prepend(pokemonImage);
